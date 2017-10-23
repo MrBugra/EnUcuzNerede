@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EnUcuzNerede</string>
+    <string name="parse_server_url">if you wanne connect my parse server</string>
+    <string name="parse_app_id">contact me </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search">Map</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrbug.enucuznerede.ListedShares">
+
+    <ListView
+        android:id="@+id/listedShares"
+        android:layout_width="371dp"
+        android:layout_height="305dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/srchlistedCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/listedShares" />
+
+    <EditText
+        android:id="@+id/txtlistedSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="orn:iplik"
+        android:maxLines="1"
+        android:maxWidth="130dp"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srchlistedCategory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintVertical_bias="0.156"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnlistedSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="54dp"
+        android:text="Ara"
+        android:onClick="SearchListedButton"
+        app:layout_constraintLeft_toRightOf="@+id/txtSearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+</android.support.constraint.ConstraintLayout>

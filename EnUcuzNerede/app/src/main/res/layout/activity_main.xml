@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrbug.enucuznerede.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btnShowmap"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/map"
+        android:elevation="2dp"
+        android:textSize="10dp"
+        android:onClick="ShowClick"
+        android:text="haritayi goster"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:textSize="10dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/share"
+        android:onClick="ShareClick"
+        android:text="Yeni Paylaşım"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="46dp"
+        android:background="@drawable/find"
+        android:onClick="SearchClick"
+        android:text="Ara"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:textSize="10dp"
+        android:background="@drawable/account"
+        android:onClick="AccountClick"
+        android:text="Hesabım"
+        android:layout_marginRight="45dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="220dp"
+        android:layout_marginRight="122dp"
+        android:background="@drawable/listed"
+        android:onClick="ListedClick"
+        android:text="Listele"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.975" />
+</android.support.constraint.ConstraintLayout>
